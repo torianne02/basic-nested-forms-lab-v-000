@@ -2,12 +2,12 @@
   <%= f.label :title %>
   <%= f.text_field :title %><br>
 
-  <%= f.fields_for :recipes do |recipe| %>
-    <%= recipe.label :name %>
-    <%= recipe.text_field :name %><br>
+  <%= f.fields_for :ingredients do |ing| %>
+    <%= ing.label :name %>
+    <%= ing.text_field :name %><br>
 
-    <%= recipe.label :quantity %>
-    <%= recipe.text_field :quantity %><br>
+    <%= ing.label :quantity %>
+    <%= ing.text_field :quantity %><br>
   <% end %>
 
   <%= f.submit %>
